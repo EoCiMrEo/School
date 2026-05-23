@@ -1,0 +1,51 @@
+version: "2"
+services:
+  colefitness_be:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    image: colefitness_be
+    container_name: colefitness_be
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    command: [python, main.py]
+    depends_on:
+      - colefitness_db
+    networks:
+      - colefitness_network
+
+  colefitness_db:
+    image: postgres:latest
+    container_name: colefitness_db
+    restart: always
+    environment:
+      POSTGRES_USER: ${DOCKER_DB_USER:-colefitness_user}
+      POSTGRES_PASSWORD: ${DOCKER_DB_PSWD:-change_this_password}
+      POSTGRES_DB: ${DOCKER_DB_NAME:-colefitness_db}
+    ports:
+      - "${DOCKER_DB_PORT:-5432}:5432"
+    volumes:
+      - PostgresData:/var/lib/postgresql/data
+    networks:
+      - colefitness_network
+
+  mydockerdevice:
+    image: ubuntu
+    container_name: mydockerdevice
+    restart: unless-stopped
+    networks:
+      - colefitness_network
+
+volumes:
+  PostgresData:
+    driver: local #default storage driver
+
+networks:
+  colefitness_network:
+    ipam:
+      driver: default
+      config:
+        - subnet: "172.46.0.0/16"
