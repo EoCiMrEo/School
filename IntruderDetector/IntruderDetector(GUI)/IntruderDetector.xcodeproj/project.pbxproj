@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C62146812DDB7E7400E5CD1F /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62146802DDB7E7400E5CD1F /* WebView.swift */; };
+		C64946192D924B13006A6378 /* IntruderDetectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64946182D924B13006A6378 /* IntruderDetectorApp.swift */; };
+		C649461B2D924B13006A6378 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C649461A2D924B13006A6378 /* ContentView.swift */; };
+		C649461D2D924B1A006A6378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C649461C2D924B1A006A6378 /* Assets.xcassets */; };
+		C64946202D924B1A006A6378 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C649461F2D924B1A006A6378 /* Preview Assets.xcassets */; };
+		C68978552DD58F9000C4B7FD /* FunctionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68978542DD58F8F00C4B7FD /* FunctionButton.swift */; };
+		C68978582DD5926A00C4B7FD /* LEDModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68978572DD5926A00C4B7FD /* LEDModel.swift */; };
+		C689785A2DD7F82C00C4B7FD /* PIRModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68978592DD7F82C00C4B7FD /* PIRModel.swift */; };
+		C69726692DC929AD00894044 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69726682DC929AD00894044 /* AuthModel.swift */; };
+		C6B989162DC87EFE00A302B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B989152DC87EFE00A302B5 /* User.swift */; };
+		C6B989182DC87F6200A302B5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B989172DC87F6100A302B5 /* LoadingView.swift */; };
+		C6B9891A2DC882BB00A302B5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B989192DC882BB00A302B5 /* LoginView.swift */; };
+		C6B9891C2DC882E700A302B5 /* DetectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B9891B2DC882E700A302B5 /* DetectorView.swift */; };
+		C6FC17502DCB363400AFD388 /* DeviceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FC174F2DCB363400AFD388 /* DeviceButton.swift */; };
+		C6FC17542DCB36B900AFD388 /* ScaleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FC17532DCB36B900AFD388 /* ScaleButtonStyle.swift */; };
+		C6FC17562DCB37C900AFD388 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FC17552DCB37C900AFD388 /* HomeView.swift */; };
+		C6FC17582DCB381E00AFD388 /* PIRMotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FC17572DCB381E00AFD388 /* PIRMotionView.swift */; };
+		C6FC175A2DCB384200AFD388 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FC17592DCB384200AFD388 /* CameraView.swift */; };
+		C6FC175C2DCB385600AFD388 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FC175B2DCB385600AFD388 /* SettingView.swift */; };
+		C6FC175E2DCB39DD00AFD388 /* SpeakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FC175D2DCB39DD00AFD388 /* SpeakerView.swift */; };
+		C6FC17602DCB39F400AFD388 /* LEDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FC175F2DCB39F400AFD388 /* LEDView.swift */; };
+		C6FC17622DCB455400AFD388 /* NavigatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FC17612DCB455300AFD388 /* NavigatorButton.swift */; };
+		C6FC17672DCB478800AFD388 /* TabNavigatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FC17662DCB478800AFD388 /* TabNavigatorView.swift */; };
+		C6FC17692DCB4BCF00AFD388 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FC17682DCB4BCF00AFD388 /* TabButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C62146802DDB7E7400E5CD1F /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		C64946152D924B13006A6378 /* IntruderDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntruderDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C64946182D924B13006A6378 /* IntruderDetectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntruderDetectorApp.swift; sourceTree = "<group>"; };
+		C649461A2D924B13006A6378 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C649461C2D924B1A006A6378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C649461F2D924B1A006A6378 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C68978542DD58F8F00C4B7FD /* FunctionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionButton.swift; sourceTree = "<group>"; };
+		C68978572DD5926A00C4B7FD /* LEDModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDModel.swift; sourceTree = "<group>"; };
+		C68978592DD7F82C00C4B7FD /* PIRModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIRModel.swift; sourceTree = "<group>"; };
+		C69726682DC929AD00894044 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		C6B989152DC87EFE00A302B5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C6B989172DC87F6100A302B5 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		C6B989192DC882BB00A302B5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C6B9891B2DC882E700A302B5 /* DetectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectorView.swift; sourceTree = "<group>"; };
+		C6FC174F2DCB363400AFD388 /* DeviceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceButton.swift; sourceTree = "<group>"; };
+		C6FC17532DCB36B900AFD388 /* ScaleButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleButtonStyle.swift; sourceTree = "<group>"; };
+		C6FC17552DCB37C900AFD388 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C6FC17572DCB381E00AFD388 /* PIRMotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIRMotionView.swift; sourceTree = "<group>"; };
+		C6FC17592DCB384200AFD388 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		C6FC175B2DCB385600AFD388 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		C6FC175D2DCB39DD00AFD388 /* SpeakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerView.swift; sourceTree = "<group>"; };
+		C6FC175F2DCB39F400AFD388 /* LEDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDView.swift; sourceTree = "<group>"; };
+		C6FC17612DCB455300AFD388 /* NavigatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorButton.swift; sourceTree = "<group>"; };
+		C6FC17662DCB478800AFD388 /* TabNavigatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigatorView.swift; sourceTree = "<group>"; };
+		C6FC17682DCB4BCF00AFD388 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C64946122D924B13006A6378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C649460C2D924B13006A6378 = {
+			isa = PBXGroup;
+			children = (
+				C64946172D924B13006A6378 /* IntruderDetector */,
+				C64946162D924B13006A6378 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C64946162D924B13006A6378 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C64946152D924B13006A6378 /* IntruderDetector.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C64946172D924B13006A6378 /* IntruderDetector */ = {
+			isa = PBXGroup;
+			children = (
+				C68978532DD5150400C4B7FD /* Models */,
+				C6FC174E2DCB361E00AFD388 /* Components */,
+				C6FC174D2DCB356A00AFD388 /* Views */,
+				C649461C2D924B1A006A6378 /* Assets.xcassets */,
+				C649461E2D924B1A006A6378 /* Preview Content */,
+				C64946182D924B13006A6378 /* IntruderDetectorApp.swift */,
+			);
+			path = IntruderDetector;
+			sourceTree = "<group>";
+		};
+		C649461E2D924B1A006A6378 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C649461F2D924B1A006A6378 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C68978532DD5150400C4B7FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C6B989152DC87EFE00A302B5 /* User.swift */,
+				C68978562DD5924F00C4B7FD /* Devices */,
+				C69726682DC929AD00894044 /* AuthModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C68978562DD5924F00C4B7FD /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				C68978572DD5926A00C4B7FD /* LEDModel.swift */,
+				C68978592DD7F82C00C4B7FD /* PIRModel.swift */,
+			);
+			path = Devices;
+			sourceTree = "<group>";
+		};
+		C6FC174D2DCB356A00AFD388 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C649461A2D924B13006A6378 /* ContentView.swift */,
+				C6FC17552DCB37C900AFD388 /* HomeView.swift */,
+				C6B9891B2DC882E700A302B5 /* DetectorView.swift */,
+				C6B989192DC882BB00A302B5 /* LoginView.swift */,
+				C6FC175B2DCB385600AFD388 /* SettingView.swift */,
+				C6FC17652DCB457E00AFD388 /* Devices */,
+				C6B989172DC87F6100A302B5 /* LoadingView.swift */,
+				C62146802DDB7E7400E5CD1F /* WebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C6FC174E2DCB361E00AFD388 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C6FC17662DCB478800AFD388 /* TabNavigatorView.swift */,
+				C6FC17512DCB365D00AFD388 /* Buttons&Style */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C6FC17512DCB365D00AFD388 /* Buttons&Style */ = {
+			isa = PBXGroup;
+			children = (
+				C6FC17612DCB455300AFD388 /* NavigatorButton.swift */,
+				C6FC17682DCB4BCF00AFD388 /* TabButton.swift */,
+				C6FC174F2DCB363400AFD388 /* DeviceButton.swift */,
+				C68978542DD58F8F00C4B7FD /* FunctionButton.swift */,
+				C6FC17522DCB368000AFD388 /* Styles */,
+			);
+			path = "Buttons&Style";
+			sourceTree = "<group>";
+		};
+		C6FC17522DCB368000AFD388 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				C6FC17532DCB36B900AFD388 /* ScaleButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		C6FC17652DCB457E00AFD388 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				C6FC17572DCB381E00AFD388 /* PIRMotionView.swift */,
+				C6FC17592DCB384200AFD388 /* CameraView.swift */,
+				C6FC175D2DCB39DD00AFD388 /* SpeakerView.swift */,
+				C6FC175F2DCB39F400AFD388 /* LEDView.swift */,
+			);
+			path = Devices;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C64946142D924B13006A6378 /* IntruderDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C64946232D924B1A006A6378 /* Build configuration list for PBXNativeTarget "IntruderDetector" */;
+			buildPhases = (
+				C64946112D924B13006A6378 /* Sources */,
+				C64946122D924B13006A6378 /* Frameworks */,
+				C64946132D924B13006A6378 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntruderDetector;
+			productName = IntruderDetector;
+			productReference = C64946152D924B13006A6378 /* IntruderDetector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C649460D2D924B13006A6378 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C64946142D924B13006A6378 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = C64946102D924B13006A6378 /* Build configuration list for PBXProject "IntruderDetector" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C649460C2D924B13006A6378;
+			productRefGroup = C64946162D924B13006A6378 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C64946142D924B13006A6378 /* IntruderDetector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C64946132D924B13006A6378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C64946202D924B1A006A6378 /* Preview Assets.xcassets in Resources */,
+				C649461D2D924B1A006A6378 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C64946112D924B13006A6378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C649461B2D924B13006A6378 /* ContentView.swift in Sources */,
+				C6FC175A2DCB384200AFD388 /* CameraView.swift in Sources */,
+				C6FC175C2DCB385600AFD388 /* SettingView.swift in Sources */,
+				C68978582DD5926A00C4B7FD /* LEDModel.swift in Sources */,
+				C6FC17582DCB381E00AFD388 /* PIRMotionView.swift in Sources */,
+				C6B989182DC87F6200A302B5 /* LoadingView.swift in Sources */,
+				C6FC17542DCB36B900AFD388 /* ScaleButtonStyle.swift in Sources */,
+				C6FC17602DCB39F400AFD388 /* LEDView.swift in Sources */,
+				C6FC17622DCB455400AFD388 /* NavigatorButton.swift in Sources */,
+				C62146812DDB7E7400E5CD1F /* WebView.swift in Sources */,
+				C689785A2DD7F82C00C4B7FD /* PIRModel.swift in Sources */,
+				C6FC17672DCB478800AFD388 /* TabNavigatorView.swift in Sources */,
+				C6FC17502DCB363400AFD388 /* DeviceButton.swift in Sources */,
+				C64946192D924B13006A6378 /* IntruderDetectorApp.swift in Sources */,
+				C6FC17692DCB4BCF00AFD388 /* TabButton.swift in Sources */,
+				C69726692DC929AD00894044 /* AuthModel.swift in Sources */,
+				C6B9891C2DC882E700A302B5 /* DetectorView.swift in Sources */,
+				C6B9891A2DC882BB00A302B5 /* LoginView.swift in Sources */,
+				C68978552DD58F9000C4B7FD /* FunctionButton.swift in Sources */,
+				C6FC17562DCB37C900AFD388 /* HomeView.swift in Sources */,
+				C6B989162DC87EFE00A302B5 /* User.swift in Sources */,
+				C6FC175E2DCB39DD00AFD388 /* SpeakerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C64946212D924B1A006A6378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C64946222D924B1A006A6378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C64946242D924B1A006A6378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IntruderDetector/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edward.IntruderDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C64946252D924B1A006A6378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IntruderDetector/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edward.IntruderDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C64946102D924B13006A6378 /* Build configuration list for PBXProject "IntruderDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C64946212D924B1A006A6378 /* Debug */,
+				C64946222D924B1A006A6378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C64946232D924B1A006A6378 /* Build configuration list for PBXNativeTarget "IntruderDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C64946242D924B1A006A6378 /* Debug */,
+				C64946252D924B1A006A6378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C649460D2D924B13006A6378 /* Project object */;
+}
