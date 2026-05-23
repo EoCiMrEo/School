@@ -1,0 +1,81 @@
+<mxfile host="app.diagrams.net" modified="2025-11-25T12:00:00.000Z" agent="GitHub Copilot" etag="1" version="2.0" type="device">
+  <diagram id="physical-architecture" name="Physical Architecture">
+    <mxGraphModel dx="1434" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="290" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Docker Host" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="180" y="80" width="740" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="poolcrest-fe&#xa;(React Frontend)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="3">
+          <mxGeometry x="40" y="180" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Port: 4028" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="3">
+          <mxGeometry x="75" y="230" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="poolcrest-be&#xa;(Django Backend)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="3">
+          <mxGeometry x="270" y="180" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Port: 8000" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="3">
+          <mxGeometry x="305" y="230" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="poolcrest_db&#xa;(PostgreSQL)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="3">
+          <mxGeometry x="500" y="80" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Port: 5432" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="3">
+          <mxGeometry x="535" y="160" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="redis&#xa;(Cache)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="3">
+          <mxGeometry x="500" y="280" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="Port: 6379" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="3">
+          <mxGeometry x="535" y="360" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="HTTP Request" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="2" target="4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="320" as="sourcePoint" />
+            <mxPoint x="220" y="320" as="mxPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" value="API Call (/api)" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="3" source="4" target="6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="220" as="sourcePoint" />
+            <mxPoint x="270" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" value="DB Query" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="3" source="6" target="8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="220" as="sourcePoint" />
+            <mxPoint x="500" y="135" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="440" y="220" />
+              <mxPoint x="440" y="135" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" value="Cache Read/Write" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="3" source="6" target="10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="220" as="sourcePoint" />
+            <mxPoint x="500" y="335" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="440" y="220" />
+              <mxPoint x="440" y="335" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" value="poolcrest_network" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;dashed=1;" vertex="1" parent="3">
+          <mxGeometry x="30" y="490" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;dashed=1;" edge="1" parent="3">
+            <mxGeometry width="50" height="50" relative="1" as="geometry">
+                <mxPoint x="30" y="480" as="sourcePoint"/>
+                <mxPoint x="710" y="480" as="targetPoint"/>
+            </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
