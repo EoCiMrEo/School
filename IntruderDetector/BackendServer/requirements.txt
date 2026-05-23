@@ -1,0 +1,5 @@
+flask
+picamera
+supabase
+requests
+python-dotenv

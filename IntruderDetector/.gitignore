@@ -1,0 +1,13 @@
+# Python
+BackendServer/.env
+BackendServer/venv/
+**/__pycache__/
+*.pyc
+
+# Xcode user/local state
+*.xcuserstate
+*.xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# OS/editor noise
+.DS_Store

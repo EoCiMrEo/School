@@ -1,0 +1,15 @@
+[Unit]
+Description=Intruder Detector backend service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=pi
+WorkingDirectory=/opt/intruder-detector/BackendServer
+ExecStart=/usr/bin/python3 /opt/intruder-detector/BackendServer/main.py
+
+[Install]
+WantedBy=multi-user.target
