@@ -1,0 +1,106 @@
+services:
+  # Backend Service
+  poolcrest-be:
+  # Uncomment the build section to build the image locally
+  # and comment out the image line if you want to use a pre-built image
+    # build:
+    #   context: ./be
+    #   dockerfile: Dockerfile --target production
+    image: poolcrest-backend
+    container_name: poolcrest-be
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+    # Uncomment the volume section (./be) below for local development to reflect code changes immediately.
+      # - ./be:/app
+      - be_media:/app/media
+      - be_static:/app/static
+      - be_staticfiles:/app/staticfiles
+    depends_on:
+      - poolcrest_db
+      - redis
+    env_file:
+      - ./be/.env.docker
+    command: daphne
+    networks:
+      - poolcrest_network
+
+  # Frontend Service
+  # poolcrest-fe:
+  # # Uncomment the build section to build the image locally
+  # # and comment out the image line if you want to use a pre-built image
+  #   build:
+  #     context: ./fe
+  #     dockerfile: Dockerfile
+  #   image: eocimreo/poolcrest-fe
+  #   container_name: poolcrest-fe
+  #   restart: always
+  #   ports:
+  #     - "4028:4028"
+  #   depends_on:
+  #     - poolcrest-be
+  #   # Uncomment the volume section (./fe) for local development to reflect code changes immediately.
+  #   # volumes:
+  #   #   - ./fe:/app
+  #   networks:
+  #     - poolcrest_network
+  #     - proxy-net
+
+  # Redis Database
+  redis:
+    image: redis:latest # Or specify a specific version like redis:6.2-alpine
+    container_name: redis
+    restart: always
+    ports:
+      - "6379:6379" # Maps host port 6379 to container port 6379
+    volumes:
+      - redis_data:/data # Persist data to a named volume
+    networks:
+      - poolcrest_network
+
+  # PostgreSQL Database
+  poolcrest_db:
+    image: postgres:latest
+    container_name: poolcrest_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: poolcrest_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - poolcrest_network
+
+  # mydockerdevice:
+  #   image: ubuntu
+  #   container_name: mydockerdevice
+  #   restart: unless-stopped
+  #   networks:
+  #     - poolcrest_network
+
+# Define volumes
+volumes:
+  postgres_data:
+    driver: local #default storage driver
+  redis_data:
+    driver: local #default storage driver
+  be_media:
+    driver: local
+  be_static:
+    driver: local
+  be_staticfiles:
+    driver: local
+
+# Define networks
+networks:
+  poolcrest_network:
+    ipam:
+      driver: default
+      config:
+        - subnet: "172.49.0.0/16"
+  proxy-net:
+    external: true

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome</title>
+    <style>
+      body { margin:0; padding:0; background:#f5f7fb; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:#1f2937; }
+      .container { width:100%; padding:24px 0; }
+      .card { max-width:560px; margin:0 auto; background:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 6px 20px rgba(0,0,0,0.08); }
+      .header { background:linear-gradient(135deg,#0ea5e9,#22d3ee); padding:24px; color:#fff; text-align:center; }
+      .brand { font-size:20px; font-weight:700; letter-spacing:0.2px; }
+      .content { padding:28px 28px 8px; font-size:15px; line-height:1.6; }
+      .button-wrap { text-align:center; padding:16px 28px 32px; }
+      .btn { display:inline-block; background:#0ea5e9; color:#fff !important; text-decoration:none; padding:12px 22px; border-radius:8px; font-weight:600; }
+      .btn:hover { background:#0284c7; }
+      .footer { padding:18px 28px 28px; font-size:12px; color:#6b7280; text-align:center; }
+      .muted { color:#6b7280; }
+      a { color:#0ea5e9; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="header">
+          <div class="brand">{{ company_name }}</div>
+        </div>
+        <div class="content">
+          <p>Hi {{ user_name }},</p>
+          <p>Welcome to {{ company_name }}! We're excited to have you on board.</p>
+          {% if verify_url %}
+          <p>To get started, please confirm your email address.</p>
+        </div>
+        <div class="button-wrap">
+          <a href="{{ verify_url }}" class="btn" target="_blank" rel="noopener">Verify email</a>
+        </div>
+        <div class="content" style="padding-top:0">
+          <p class="muted">If the button doesn’t work, copy and paste this link into your browser:</p>
+          <p class="muted"><a href="{{ verify_url }}" target="_blank" rel="noopener">{{ verify_url }}</a></p>
+          {% else %}
+          <p>You can now sign in and start using your account.</p>
+          {% endif %}
+          <p class="muted">If you have any questions, reply to this email—we're here to help.</p>
+        </div>
+        <div class="footer">
+          <p>&copy; {{ company_name }} • Need help? <a href="mailto:{{ support_email }}">{{ support_email }}</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import PromotionViewSet
+
+router = DefaultRouter()
+router.register(r'promotions', PromotionViewSet, basename='promotion')
+
+app_name = 'promotions'
+
+urlpatterns = [
+    path('', include(router.urls)),
+]

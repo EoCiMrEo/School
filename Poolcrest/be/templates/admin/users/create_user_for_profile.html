@@ -1,0 +1,101 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls static %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'admin/js/vendor/jquery/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'admin/js/jquery.init.js' %}"></script>
+{% endblock %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <style>
+        .form-row {
+            padding: 10px;
+        }
+        .profile-info {
+            background: #f8f8f8;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .profile-info h3 {
+            margin-top: 0;
+        }
+        .help {
+            font-size: 11px;
+            color: #666;
+        }
+    </style>
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+    &rsaquo; <a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a>
+    &rsaquo; <a href="{% url 'admin:users_userprofile_changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a>
+    &rsaquo; <a href="{% url 'admin:users_userprofile_change' profile.pk %}">{{ profile.full_name }}</a>
+    &rsaquo; {% trans 'Create User Account' %}
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+    <div class="profile-info">
+        <h3>Profile Information</h3>
+        <p><strong>Name:</strong> {{ profile.full_name }}</p>
+        <p><strong>Phone:</strong> {{ profile.phone|default:"Not provided" }}</p>
+        <p><strong>Role:</strong> {{ profile.get_role_display }}</p>
+        <p><strong>Status:</strong> {{ profile.get_status_display }}</p>
+        {% if profile.company_name %}
+        <p><strong>Company:</strong> {{ profile.company_name }}</p>
+        {% endif %}
+    </div>
+
+    <form method="post" id="create-user-form">
+        {% csrf_token %}
+        
+        <fieldset class="module aligned">
+            <h2>Create User Account</h2>
+            
+            {% if form.non_field_errors %}
+                <div class="errornote">
+                    {{ form.non_field_errors }}
+                </div>
+            {% endif %}
+            
+            {% for field in form %}
+                <div class="form-row{% if field.errors %} errors{% endif %}">
+                    <div>
+                        {{ field.errors }}
+                        <label for="{{ field.id_for_label }}"{% if field.field.required %} class="required"{% endif %}>
+                            {{ field.label }}:
+                        </label>
+                        {{ field }}
+                        {% if field.help_text %}
+                            <p class="help">{{ field.help_text|safe }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </fieldset>
+        
+        <div class="submit-row">
+            <input type="submit" value="Create User Account" class="default" />
+            <a href="{% url 'admin:users_userprofile_change' profile.pk %}" class="button cancel-link">Cancel</a>
+        </div>
+    </form>
+</div>
+
+<script>
+    // Add password strength indicator or other JS here if needed
+    document.addEventListener('DOMContentLoaded', function() {
+        // Auto-generate email from name if needed
+        const firstNameField = document.querySelector('input[name="first_name"]');
+        const lastNameField = document.querySelector('input[name="last_name"]');
+        const emailField = document.querySelector('input[name="email"]');
+        
+        // You can add custom JS behavior here
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,205 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="29.2.2">
+  <diagram name="Page-1" id="WKKxbE4i78D0BuaDngAV">
+    <mxGraphModel dx="3169" dy="1829" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" value="" vertex="1">
+          <mxGeometry height="1550" width="2350" x="330" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-2" parent="1" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontSize=15;" value="Frontend (Browser)" vertex="1">
+          <mxGeometry height="1348" width="1030" x="790" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-3" parent="1" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontSize=15;" value="Backend (Server)" vertex="1">
+          <mxGeometry height="1348" width="602" x="1970" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-4" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=top;align=center;size=65;fontSize=15;" value="User" vertex="1">
+          <mxGeometry height="1303" width="35" x="530" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-5" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=15;" value="Login" vertex="1">
+          <mxGeometry height="1303" width="150" x="817" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-6" parent="mjy2_BuhtOkN6pRFDULf-5" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fontSize=15;" value="" vertex="1">
+          <mxGeometry height="1060" width="10" x="70" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-7" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=15;" value="Auth Service" vertex="1">
+          <mxGeometry height="1303" width="167" x="1017" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-8" parent="mjy2_BuhtOkN6pRFDULf-7" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fontSize=15;" value="" vertex="1">
+          <mxGeometry height="864" width="10" x="79" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-9" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=15;" value="api (axios)" vertex="1">
+          <mxGeometry height="1303" width="150" x="1390" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-10" parent="mjy2_BuhtOkN6pRFDULf-9" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fontSize=15;" value="" vertex="1">
+          <mxGeometry height="146" width="10" x="70" y="291" as="geometry" />
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-11" parent="mjy2_BuhtOkN6pRFDULf-9" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fontSize=15;" value="" vertex="1">
+          <mxGeometry height="310" width="10" x="70" y="548" as="geometry" />
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-12" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=15;" value="Auth Context" vertex="1">
+          <mxGeometry height="1303" width="182" x="1612" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-13" parent="mjy2_BuhtOkN6pRFDULf-12" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fontSize=15;" value="" vertex="1">
+          <mxGeometry height="102" width="10" x="86" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-14" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=15;" value="Django Middleware" vertex="1">
+          <mxGeometry height="1303" width="158" x="1990" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-15" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=15;" value="URL Router (urls.py)" vertex="1">
+          <mxGeometry height="1303" width="159" x="2180" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-16" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=15;" value="Auth View (users app)" vertex="1">
+          <mxGeometry height="1303" width="175" x="2370" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-17" parent="mjy2_BuhtOkN6pRFDULf-16" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fontSize=15;" value="" vertex="1">
+          <mxGeometry height="32" width="10" x="82" y="343" as="geometry" />
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-18" parent="mjy2_BuhtOkN6pRFDULf-16" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fontSize=15;" value="" vertex="1">
+          <mxGeometry height="114" width="10" x="82" y="682" as="geometry" />
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-19" edge="1" parent="1" source="mjy2_BuhtOkN6pRFDULf-4" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=15;" target="mjy2_BuhtOkN6pRFDULf-6" value="Submit username &amp; password">
+          <mxGeometry relative="1" x="-0.2766" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="757" y="363" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-20" edge="1" parent="1" source="mjy2_BuhtOkN6pRFDULf-6" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=15;" target="mjy2_BuhtOkN6pRFDULf-8" value="login(credentials)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1007" y="415" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-21" edge="1" parent="1" source="mjy2_BuhtOkN6pRFDULf-8" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=15;" target="mjy2_BuhtOkN6pRFDULf-10" value="get(&quot;/api/users/auth/csrf/&quot;)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1293" y="516" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-22" edge="1" parent="1" source="mjy2_BuhtOkN6pRFDULf-10" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=15;" target="mjy2_BuhtOkN6pRFDULf-17" value="HTTP GET /api/users/auth/csrf/">
+          <mxGeometry relative="1" x="0.1202" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1927" y="568" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-23" edge="1" parent="1" source="mjy2_BuhtOkN6pRFDULf-16" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=15;" target="mjy2_BuhtOkN6pRFDULf-10" value="HTTP 200 OK (sets &#39;csrftoken&#39; cookie)">
+          <mxGeometry relative="1" x="-0.1348" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1928" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-24" edge="1" parent="1" source="mjy2_BuhtOkN6pRFDULf-9" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=15;" target="mjy2_BuhtOkN6pRFDULf-8" value="Response received">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1294" y="672" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-25" edge="1" parent="1" source="mjy2_BuhtOkN6pRFDULf-8" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=15;" target="mjy2_BuhtOkN6pRFDULf-11" value="post(&quot;/api/users/auth/login/&quot;, credentials)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1293" y="773" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-26" edge="1" parent="1" source="mjy2_BuhtOkN6pRFDULf-11" style="curved=1;dashed=1;dashPattern=2 3;endArrow=block;rounded=0;fontSize=15;" target="mjy2_BuhtOkN6pRFDULf-11" value="Read &#39;csrftoken&#39; cookie, add &#39;X-CSRFToken&#39; header">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1520" y="825" />
+              <mxPoint x="1520" y="855" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-27" edge="1" parent="1" source="mjy2_BuhtOkN6pRFDULf-11" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=15;" target="mjy2_BuhtOkN6pRFDULf-18" value="HTTP POST /api/users/auth/login/">
+          <mxGeometry relative="1" x="0.5682" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1927" y="907" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-28" edge="1" parent="1" source="mjy2_BuhtOkN6pRFDULf-18" style="curved=1;dashed=1;dashPattern=2 3;endArrow=block;rounded=0;fontSize=15;" target="mjy2_BuhtOkN6pRFDULf-18" value="Authenticate user credentials">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2423" y="959" />
+              <mxPoint x="2423" y="989" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-29" edge="1" parent="1" source="mjy2_BuhtOkN6pRFDULf-16" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=15;" target="mjy2_BuhtOkN6pRFDULf-11" value="HTTP 200 OK + user data (sets JWT httpOnly cookies)">
+          <mxGeometry relative="1" x="-0.4792" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1928" y="1041" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-30" edge="1" parent="1" source="mjy2_BuhtOkN6pRFDULf-9" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=15;" target="mjy2_BuhtOkN6pRFDULf-8" value="Return user data from response">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1294" y="1093" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-31" edge="1" parent="1" source="mjy2_BuhtOkN6pRFDULf-8" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=15;" target="mjy2_BuhtOkN6pRFDULf-13" value="setUser(userData), update state">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1412" y="1145" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-32" edge="1" parent="1" source="mjy2_BuhtOkN6pRFDULf-13" style="curved=1;dashed=1;dashPattern=2 3;endArrow=block;rounded=0;fontSize=15;" target="mjy2_BuhtOkN6pRFDULf-13" value="Store user data, set isAuthenticated=true">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1758" y="1197" />
+              <mxPoint x="1758" y="1227" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-33" edge="1" parent="1" source="mjy2_BuhtOkN6pRFDULf-8" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=15;" target="mjy2_BuhtOkN6pRFDULf-6" value="Login successful">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1008" y="1279" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-34" edge="1" parent="1" source="mjy2_BuhtOkN6pRFDULf-6" style="curved=1;dashed=1;dashPattern=2 3;endArrow=block;rounded=0;fontSize=15;" target="mjy2_BuhtOkN6pRFDULf-6" value="Redirect to dashboard or home page">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="947" y="1331" />
+              <mxPoint x="947" y="1361" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-35" edge="1" parent="1" source="mjy2_BuhtOkN6pRFDULf-6" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=15;" target="mjy2_BuhtOkN6pRFDULf-4" value="Display authenticated UI">
+          <mxGeometry relative="1" x="0.1577" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="758" y="1413" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-36" parent="1" style="fillColor=#ffff88;strokeColor=#9E916F;fontSize=15;" value="Step 1: Get CSRF token to prime the cookie" vertex="1">
+          <mxGeometry height="49" width="1318" x="1090" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-37" parent="1" style="fillColor=#ffff88;strokeColor=#9E916F;fontSize=15;" value="Step 2: Perform Login" vertex="1">
+          <mxGeometry height="49" width="1318" x="1076" y="692" as="geometry" />
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-39" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=28;" value="&lt;font&gt;User Login Sequence&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="335" x="1337.5" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="mjy2_BuhtOkN6pRFDULf-76" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Question&lt;div&gt;What is AuthContext used for ?&lt;/div&gt;&lt;div&gt;Answer: Is to hold user&#39;s authentication state and then share it accross components.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="320" x="1280" y="1800" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,246 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="29.2.1">
+  <diagram name="Page-1" id="rgxgFUuvB2NQ2rIPHAVF">
+    <mxGraphModel dx="4074" dy="1182" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JBAigrCMrf-er1VBuDSI-94" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" value="" vertex="1">
+          <mxGeometry height="1670" width="3040" x="100" y="1340" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-2" parent="1" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontSize=15;" value="Frontend (Browser)" vertex="1">
+          <mxGeometry height="1483" width="740" x="530" y="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-3" parent="1" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontSize=15;" value="Backend (Server)" vertex="1">
+          <mxGeometry height="1483" width="1170" x="1590" y="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-4" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=top;align=center;size=65;fontSize=15;" value="User" vertex="1">
+          <mxGeometry height="1435" width="35" x="220" y="1488" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-5" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=15;" value="Create Quote" vertex="1">
+          <mxGeometry height="1435" width="150" x="555" y="1488" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-6" parent="JBAigrCMrf-er1VBuDSI-5" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fontSize=15;" value="" vertex="1">
+          <mxGeometry height="1192" width="10" x="70" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-7" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=15;" value="Services" vertex="1">
+          <mxGeometry height="1435" width="150" x="797" y="1488" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-8" parent="JBAigrCMrf-er1VBuDSI-7" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fontSize=15;" value="" vertex="1">
+          <mxGeometry height="996" width="10" x="70" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-9" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=15;" value="api (axios)" vertex="1">
+          <mxGeometry height="1435" width="150" x="1091" y="1488" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-10" parent="JBAigrCMrf-er1VBuDSI-9" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fontSize=15;" value="" vertex="1">
+          <mxGeometry height="882" width="10" x="70" y="242" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-11" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=15;" value="Vite Dev Server" vertex="1">
+          <mxGeometry height="1435" width="150" x="1349" y="1488" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-12" parent="JBAigrCMrf-er1VBuDSI-11" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fontSize=15;" value="" vertex="1">
+          <mxGeometry height="32" width="10" x="70" y="376" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-13" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=15;" value="Django Middleware" vertex="1">
+          <mxGeometry height="1435" width="158" x="1619" y="1488" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-14" parent="JBAigrCMrf-er1VBuDSI-13" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fontSize=15;" value="" vertex="1">
+          <mxGeometry height="114" width="10" x="74" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-15" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=15;" value="URL Router (urls.py)" vertex="1">
+          <mxGeometry height="1435" width="159" x="1879" y="1488" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-16" parent="JBAigrCMrf-er1VBuDSI-15" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fontSize=15;" value="" vertex="1">
+          <mxGeometry height="32" width="10" x="74" y="562" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-17" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=15;" value="QuoteViewSet" vertex="1">
+          <mxGeometry height="1435" width="150" x="2131" y="1488" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-18" parent="JBAigrCMrf-er1VBuDSI-17" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fontSize=15;" value="" vertex="1">
+          <mxGeometry height="448" width="10" x="70" y="614" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-19" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=15;" value="Quote Serializer" vertex="1">
+          <mxGeometry height="1435" width="150" x="2373" y="1488" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-20" parent="JBAigrCMrf-er1VBuDSI-19" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fontSize=15;" value="" vertex="1">
+          <mxGeometry height="22" width="10" x="70" y="666" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-21" parent="JBAigrCMrf-er1VBuDSI-19" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fontSize=15;" value="" vertex="1">
+          <mxGeometry height="22" width="10" x="70" y="978" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-22" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=15;" value="Quote Model" vertex="1">
+          <mxGeometry height="1435" width="150" x="2573" y="1488" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-23" parent="JBAigrCMrf-er1VBuDSI-22" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fontSize=15;" value="" vertex="1">
+          <mxGeometry height="126" width="10" x="70" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-24" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=15;" value="PostgreSQL DB" vertex="1">
+          <mxGeometry height="1435" width="150" x="2826" y="1488" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-25" parent="JBAigrCMrf-er1VBuDSI-24" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fontSize=15;" value="" vertex="1">
+          <mxGeometry height="12" width="10" x="70" y="822" as="geometry" />
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-26" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-4" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-6" value="Fill out and submit quote form">
+          <mxGeometry relative="1" x="-0.2623" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="471" y="1626" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-27" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-6" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-8" value="createQuote(quoteData)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="762" y="1678" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-28" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-8" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-10" value="post(&quot;/api/quotes/&quot;, quoteData)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1030" y="1730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-29" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-10" style="curved=1;dashed=1;dashPattern=2 3;endArrow=block;rounded=0;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-10" value="Add X-CSRFToken header via interceptor">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1221" y="1782" />
+              <mxPoint x="1221" y="1812" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-30" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-10" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-12" value="HTTP POST /api/quotes/">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1306" y="1864" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-31" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-11" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-14" value="Forward HTTP POST request">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1572" y="1916" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-32" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-14" style="curved=1;dashed=1;dashPattern=2 3;endArrow=block;rounded=0;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-14" value="Process JWT &amp; CSRF tokens">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1753" y="1968" />
+              <mxPoint x="1753" y="1998" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-33" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-13" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-16" value="Pass authenticated request">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1839" y="2050" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-34" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-15" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-18" value="Route to create() method">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2093" y="2102" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-35" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-18" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-20" value="validate(request.data)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2338" y="2154" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-36" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-19" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-18" value="Return validated data">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2339" y="2206" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-37" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-18" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-23" value="Quote.objects.create(validated_data)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2438" y="2258" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-38" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-23" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-25" value="INSERT INTO quotes (...)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2785" y="2310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-39" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-24" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-23" value="Return new quote ID">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2786" y="2362" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-40" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-22" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-18" value="Return quote instance">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2439" y="2414" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-41" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-18" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-21" value="serialize(quote_instance)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2338" y="2466" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-42" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-19" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-18" value="Return JSON data">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2339" y="2518" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-43" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-17" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-10" value="HTTP 201 Created + JSON data">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1698" y="2570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-44" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-9" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-8" value="Return response data">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1031" y="2622" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-45" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-8" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-6" value="Return created quote">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="763" y="2674" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-46" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-6" style="curved=1;dashed=1;dashPattern=2 3;endArrow=block;rounded=0;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-6" value="Update component state (e.g., show success)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="685" y="2726" />
+              <mxPoint x="685" y="2756" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-47" edge="1" parent="1" source="JBAigrCMrf-er1VBuDSI-6" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=15;" target="JBAigrCMrf-er1VBuDSI-4" value="Display &quot;Quote Submitted!&quot; message">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="472" y="2808" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBAigrCMrf-er1VBuDSI-95" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=28;" value="Quote Creation Sequence" vertex="1">
+          <mxGeometry height="30" width="345" x="1447.5" y="1370" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

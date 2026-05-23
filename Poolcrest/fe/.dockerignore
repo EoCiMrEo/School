@@ -1,0 +1,96 @@
+# ==============================================================================
+# Poolcrest Frontend - Docker Ignore File
+# ==============================================================================
+# Excludes unnecessary files from Docker build context to reduce image size,
+# build time, and improve security by not including sensitive files.
+# ==============================================================================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+.vite/
+*.local
+
+# Environment variables (CRITICAL - Never include in Docker image)
+.env
+.env.*
+.env.local
+.env.development
+.env.production
+.env.test
+!.env.example
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.editorconfig
+
+# Git
+.git/
+.gitignore
+.gitattributes
+.github/
+
+# Docker
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Testing
+coverage/
+.nyc_output/
+*.test.js
+*.test.jsx
+*.spec.js
+*.spec.jsx
+__tests__/
+test/
+tests/
+
+# Documentation
+*.md
+!README.md
+docs/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Misc
+.cache/
+.eslintcache
+.prettierrc
+.stylelintrc
+jsconfig.json
+tsconfig.json
+
+# Public directory (might contain large assets you don't want in build context)
+# Uncomment if needed:
+# public/assets/*.mp4
+# public/assets/*.mov
