@@ -1,0 +1,34 @@
+# Glossary — TicTacToe Arena
+
+This glossary explains key terms, patterns, and components used in the TicTacToe Arena project. Each entry includes a concise definition, why it matters for this codebase, and where to look for examples in the repository.
+
+| Term | Definition | Why it Matters | Example / Location |
+|---|---|---|---|
+| ELO | A relative skill-rating system that assigns players numeric ratings which change after matches. | Drives matchmaking and ranking; used to find balanced opponents. | See `be/.env.example` (DEFAULT_ELO_RATING) and matchmaking logic in `be/services/matchMakingServices`.
+| Pub/Sub (Publish/Subscribe) | Messaging pattern where publishers emit messages to channels and subscribers receive messages for channels they subscribe to. | Decouples producers and consumers across services; used as the event bus. | Redis Pub/Sub: `be/services/websocketGateway/main.py` and `gameServices/routes.py` publish to `game_updates` and `domain_events`.
+| Room (Socket.IO) | Logical grouping in Socket.IO to target events to specific clients (e.g., `game_<game_id>` or a user id). | Ensures events reach only relevant players or dashboards. | `publish_game_update` uses `room` field in messages published by game service.
+| Redis (runtime state) | In-memory data store used for low-latency state and Pub/Sub channels. | Stores active game boards and supports fast atomic updates. | `be/services/gameServices/state/` contains helpers like `create_game`, `apply_move`.
+| Redis Cluster | A production-grade, sharded Redis setup providing high availability and scaling. | Required for HA and scale to avoid Redis single-point-of-failure. | Recommendation in report; production migration step.
+| WebSocket | Full-duplex communication channel over a single TCP connection (wss/written as WebSocket). | Enables real-time game updates and low-latency interactions. | Implemented with Socket.IO in `be/services/websocketGateway`.
+| Socket.IO | A library that provides real-time event-based communication with fallbacks and additional features over raw WebSocket. | Simplifies rooms, reconnection, and message routing for clients and servers. | Gateway uses `flask_socketio` configured with Redis `message_queue` in `main.py`.
+| JWT (JSON Web Token) | A compact, URL-safe means of representing claims to be transferred between two parties. | Standard token format for authentication/authorization across services. | Auth service and front-end should use JWTs; see `be/.env.example` and auth service code.
+| CSRF (Cross-Site Request Forgery) | Attack that forces a user to execute unwanted actions in a web application where they're authenticated. | Cookie-based auth flows must mitigate CSRF. | Use CSRF tokens or SameSite cookie settings; noted in Security section.
+| CORS (Cross-Origin Resource Sharing) | Browser mechanism that allows controlled access to resources located outside a given domain. | Frontend origins are whitelisted for Socket and REST calls; misconfiguration blocks clients. | `be/services/*/main.py` configures CORS using env `FRONTEND_URL`.
+| PostgreSQL | Relational database used for durable metadata like finished games and user profiles. | Persistent store for audit, leaderboards, and historical data. | DB models under `be/services/*/db/` and migrations folders.
+| Docker & docker-compose | Containerization and local multi-container orchestration tool. | Reproducible local dev and simplified deployments. | Each service has `Dockerfile` and many have `docker-compose.yml` under `be/services/*`.
+| Kubernetes | Container orchestration platform for production deployments with autoscaling and HA. | Recommended for production for orchestrating multiple services, auto-healing, and scaling. | Suggested in roadmap; manifests not present yet.
+| Flask Blueprints | Flask pattern for modularizing routes and handlers into reusable components. | Keeps service code organized and consistent. | `routes.py` in each service registers a blueprint in `main.py`.
+| Domain Event | A semantic event representing a significant business occurrence (e.g., `GAME_COMPLETED`). | Used to trigger cross-service side-effects like stats updates and leaderboard adjustments. | `gameServices` publishes `GAME_COMPLETED` to `domain_events` channel.
+| Reconciliation (write-back) | Background process that ensures durable persistence (DB) reflects runtime state (Redis). | Guarantees eventual consistency and handles missed writes during failures. | Recommended pattern in report; implement as background worker or Celery task.
+| TTL (Time To Live) | Expiration time for ephemeral data (seconds). | Used for move timers, session expiry, and Redis key lifecycle. | `be/.env.example` contains `MOVE_TIME_LIMIT` and other TTLs.
+| Timeout Manager | Background component that enforces time-based rules (e.g., move timeout). | Ensures games progress and handles forfeits/timeouts. | `be/services/gameServices/timeout_manager.py`.
+| Atomic Operation | Operation that completes fully or not at all; often implemented using Redis transactions or Lua scripts. | Prevents race conditions when multiple clients attempt conflicting updates. | Use Redis `MULTI/EXEC` or Lua scripts for `apply_move` operations.
+| Lua Script (Redis) | Server-side script executed atomically inside Redis. | Ideal for complex atomic logic (move validation + state update). | Recommended for `apply_move` to prevent race conditions.
+| Idempotency | Property that repeating the same operation has the same effect as doing it once. | Important for safe retries of REST calls and background tasks. | Use idempotency keys for move submission and DB writes.
+| Rate Limiting | Policy to limit requests from a client over time. | Protects endpoints (login, matchmaking) from abuse and brute-force attacks. | Configure using `RATELIMIT_STORAGE_URL` pointing to Redis (see `.env.example`).
+| Observability | Collection of metrics, logs, and traces to understand system behavior. | Essential for debugging latency, errors, and capacity planning. | Add Prometheus metrics + structured logs (recommendation in report).
+| Contract Test | Tests that validate producers and consumers of events or APIs follow the agreed schema. | Prevents cross-service regressions caused by event/payload changes. | Add JSON schema validation for Pub/Sub messages and contract tests for gateway and services.
+| Leaderboard | Ranked list of players computed from match outcomes and ELO adjustments. | Primary user-facing metric for competition and retention. | `be/services/leaderBoardServices` consumes `domain_events` to update ranks.
+| Matchmaking | Algorithm and service that pairs players for games based on ELO and configuration. | Core UX: fairness and wait time tradeoffs. | `be/services/matchMakingServices` and settings in `.env.example`.
+
+If you want, I can also: export this glossary as a CSV, add cross-references to the report, or generate a short printable PDF.
